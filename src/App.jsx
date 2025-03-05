@@ -37,11 +37,11 @@ const Quiz = () => {
   const startQuiz = (selectedCategory, customQuestions = null) => {
     const allQuestions = customQuestions || quizCategories[selectedCategory];
     const shuffledAll = shuffleArray([...allQuestions]);
-    const finalQuestions = shuffledAll.slice(0, 40);
+    const finalQuestions = shuffledAll
 
     setCategory(selectedCategory);
     setQuestions(finalQuestions);
-    setSelectedQuestionsCount(40); // Guardamos 40
+    setSelectedQuestionsCount(100); // Guardamos 40
     setTotalQuestionsCount(null); // Reiniciamos totalQuestionsCount
     setFailedQuestions([]);
     setCurrentQuestion(0);
@@ -136,7 +136,7 @@ const Quiz = () => {
 
             <a href="https://www.kodedev.tech/"><div className=" group-[link]: mt-4 ml-2 bg-red-500 text-white px-2 py-1 md:px-4 md:py-2 md:text-md rounded hover:bg-red-700 cursor-pointer">Volver</div></a>
 
-            <h2 className="mt-5 font-bold">Test 40 preguntas</h2>
+            <h2 className="mt-5 font-bold">Test 100 preguntas</h2>
             <button
               className="mt-4 bg-blue-500 text-white px-2 py-1 md:px-4 md:py-2 md:text-md rounded hover:bg-blue-700 cursor-pointer"
               onClick={() => startQuiz("cuestionarios")}
