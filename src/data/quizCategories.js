@@ -149,8 +149,8 @@ export const quizCategories = {
       {
         question: 'En el sistema automático de detección y supresión de incendios y explosiones, el proceso de descarga dura aproximadamente:',
         options: [
-          { text: "2 sg", correct: false },
-          { text: "1 sg", correct: true },
+          { text: "2 sg", correct: true},
+          { text: "1 sg", correct: false },
           { text: "3 sg", correct: false },
         ],
       },
@@ -181,8 +181,8 @@ export const quizCategories = {
       {
         question: 'En el sistema supresor de explosiones, en posición normal el sistema se activa al recibir la señal de detección de:',
         options: [
-          { text: "Un detector óptico", correct: false },
-          { text: "Dos o más detectores ópticos", correct: true },
+          { text: "Un detector óptico", correct: true },
+          { text: "Dos o más detectores ópticos", correct: false},
           { text: "Ninguna de las anteriores es correcta", correct: false },
         ],
       },
@@ -430,9 +430,9 @@ export const quizCategories = {
           {
             question: 'Longitud total del vehículo:',
             options: [
-              { text: "6.150 Cm", correct: true },
+              { text: "6.150 Cm", correct: false },
               { text: "6.250 Cm", correct: false },
-              { text: "6.150 Mm", correct: false },
+              { text: "6.150 Mm", correct: true },
               { text: "6.250 Mm", correct: false },
             ],
           },
@@ -812,7 +812,8 @@ export const quizCategories = {
         { text: "Filtro del turbocompresor.", correct: false },
         { text: "Filtro rotativo.", correct: false },
       ],
-    },           
+    },
+
   ],
   ]
 }
