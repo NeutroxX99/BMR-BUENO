@@ -139,90 +139,9 @@ const Quiz = () => {
             <h2 className="mt-5 font-bold">Test 40 preguntas</h2>
             <button
               className="mt-4 bg-blue-500 text-white px-2 py-1 md:px-4 md:py-2 md:text-md rounded hover:bg-blue-700 cursor-pointer"
-              onClick={() => startQuiz("acceso_datos")}
+              onClick={() => startQuiz("cuestionarios")}
             >
-              Acc Datos
-            </button>
-            <button
-              className="mt-4 ml-2 bg-green-600 text-white px-2 py-1 md:px-4 md:py-2 md:text-md rounded hover:bg-green-800 cursor-pointer"
-              onClick={() => startQuiz("desarrollo_interfaces")}
-            >
-              Des de Interfaces
-            </button>
-            <button
-              className="mt-4 ml-2 bg-orange-500 text-white px-2 py-1 md:px-4 md:py-2 md:text-md rounded hover:bg-orange-700 cursor-pointer"
-              onClick={() => startQuiz("empresa")}
-            >
-              Empresa
-            </button>
-            <button
-              className="mt-4 ml-2 bg-red-500 text-white px-2 py-1 md:px-4 md:py-2 md:text-md rounded hover:bg-red-700 cursor-pointer"
-              onClick={() => startQuiz("ingles")}
-            >
-              Ingles
-            </button>
-            <button
-              className="mt-4 ml-2 bg-fuchsia-600 text-white px-2 py-1 md:px-4 md:py-2 md:text-md rounded hover:bg-fuchsia-800 cursor-pointer"
-              onClick={() => startQuiz("progr_serv_proces")}
-            >
-              Prog Ser Proc
-            </button>
-            <button
-              className="mt-4 ml-2 bg-emerald-600 text-white px-2 py-1 md:px-4 md:py-2 md:text-md rounded hover:bg-emerald-800 cursor-pointer"
-              onClick={() => startQuiz("progr_mult_dispos_moviles")}
-            >
-              Prog M y Disp Mov
-            </button>
-            <button
-              className="mt-4 ml-2 bg-cyan-600 text-white px-2 py-1 md:px-4 md:py-2 md:text-md rounded hover:bg-cyan-800 cursor-pointer"
-              onClick={() => startQuiz("sist_gest_empres")}
-            >
-              Sist Gest Empres
-            </button>
-          </div>
-          <div>
-            <h2 className="mt-5 font-bold">Test completos</h2>
-            <button
-              className="mt-4 bg-blue-500 text-white px-2 py-1 md:px-4 md:py-2 md:text-md rounded hover:bg-blue-700 cursor-pointer"
-              onClick={() => startQuizComplet("acceso_datos")}
-            >
-              Acc Datos
-            </button>
-            <button
-              className="mt-4 ml-2 bg-green-600 text-white px-2 py-1 md:px-4 md:py-2 md:text-md rounded hover:bg-green-800 cursor-pointer"
-              onClick={() => startQuizComplet("desarrollo_interfaces")}
-            >
-              Des de Interfaces
-            </button>
-            <button
-              className="mt-4 ml-2 bg-orange-500 text-white px-2 py-1 md:px-4 md:py-2 md:text-md rounded hover:bg-orange-700 cursor-pointer"
-              onClick={() => startQuizComplet("empresa")}
-            >
-              Empresa
-            </button>
-            <button
-              className="mt-4 ml-2 bg-red-500 text-white px-2 py-1 md:px-4 md:py-2 md:text-md rounded hover:bg-red-700 cursor-pointer"
-              onClick={() => startQuizComplet("ingles")}
-            >
-              Ingles
-            </button>
-            <button
-              className="mt-4 ml-2 bg-fuchsia-600 text-white px-2 py-1 md:px-4 md:py-2 md:text-md rounded hover:bg-fuchsia-800 cursor-pointer"
-              onClick={() => startQuizComplet("progr_serv_proces")}
-            >
-              Prog Ser Proc
-            </button>
-            <button
-              className="mt-4 ml-2 bg-emerald-600 text-white px-2 py-1 md:px-4 md:py-2  md:text-md rounded hover:bg-emerald-800 cursor-pointer"
-              onClick={() => startQuizComplet("progr_mult_dispos_moviles")}
-            >
-              Prog M y Disp Mov
-            </button>
-            <button
-              className="mt-4 ml-2 bg-cyan-600 text-white px-2 py-1 md:px-4 md:py-2  md:text-md rounded hover:bg-cyan-800 cursor-pointer"
-              onClick={() => startQuizComplet("sist_gest_empres")}
-            >
-              Sist Gest Empres
+              cuestionarios
             </button>
           </div>
         </div>
