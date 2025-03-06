@@ -1,7 +1,105 @@
 export const quizCategories = {
   cuestionarios: [
-
     {
+      "question": "¿Cuántos cilindros tiene el motor del vehículo?",
+      "options": [
+        { "text": "6 en línea.", "correct": true },
+        { "text": "6 en V.", "correct": false },
+        { "text": "8 en V.", "correct": false },
+        { "text": "8 en línea.", "correct": false }
+      ]
+    },
+    {
+      "question": "¿Capacidad del depósito auxiliar y principal?",
+      "options": [
+        { "text": "123 y 234.", "correct": false },
+        { "text": "147 y 191.", "correct": false },
+        { "text": "275 y 110.", "correct": true },
+        { "text": "234 y 123.", "correct": false }
+      ]
+    },
+    {
+      "question": "¿Potencia del motor del vehículo?",
+      "options": [
+        { "text": "310 CV.", "correct": true },
+        { "text": "124 CV.", "correct": false },
+        { "text": "380 CV.", "correct": false },
+        { "text": "(Opción faltante)", "correct": false }
+      ]
+    },
+    {
+      "question": "¿Cuál es la cilindrada del motor?",
+      "options": [
+        { "text": "9000 m3", "correct": false },
+        { "text": "90.000 cm3", "correct": false },
+        { "text": "9 cm3", "correct": false },
+        { "text": "9000 cm3", "correct": true }
+      ]
+    },
+    {
+      "question": "¿Cuál es el fabricante del motor?",
+      "options": [
+        { "text": "SCANIA", "correct": true },
+        { "text": "MAN", "correct": false },
+        { "text": "PEGASO", "correct": false },
+        { "text": "IVECO", "correct": false }
+      ]
+    },
+    {
+      "question": "Los componentes del sistema de escape son:",
+      "options": [
+        { "text": "Baterías/alternador/luces/master.", "correct": false },
+        { "text": "Turbocompresor/abrazaderas/silencioso/tramo flexible.", "correct": true },
+        { "text": "Frenos/calderines/retardador/pinzas.", "correct": false },
+        { "text": "Bomba de alimentación/deposito auxiliar/llave T/inyector.", "correct": false }
+      ]
+    },
+    {
+      "question": "¿Cuántos paneles hay en el salpicadero?",
+      "options": [
+        { "text": "4 y el indicador de ruedas.", "correct": true },
+        { "text": "5", "correct": false },
+        { "text": "6", "correct": false },
+        { "text": "5 y el indicador de ruedas.", "correct": false }
+      ]
+    },
+    {
+      "question": "¿Qué es lo que indica la luz roja en el panel de accesorios?",
+      "options": [
+        { "text": "Rueda pinchada.", "correct": false },
+        { "text": "Falta de combustible.", "correct": false },
+        { "text": "Baja presión de aceite motor.", "correct": true },
+        { "text": "Filtro sucio.", "correct": false }
+      ]
+    },
+    {
+      "question": "¿Dónde se ve indicado el estado de la carga de baterías?",
+      "options": [
+        { "text": "En el panel de accesorios.", "correct": false },
+        { "text": "En el panel de indicadores del vehículo.", "correct": true },
+        { "text": "En el panel de interruptores.", "correct": false },
+        { "text": "En el Panel de control.", "correct": false }
+      ]
+    },
+    {
+      "question": "El sistema de explosión y contra incendios proporciona...",
+      "options": [
+        { "text": "3 acciones de extinción de incendios.", "correct": false },
+        { "text": "2 acciones de contra explosiones.", "correct": false },
+        { "text": "2 acciones de supresión de explosiones.", "correct": true },
+        { "text": "3 combinaciones de ambas.", "correct": false }
+      ]
+    },
+    {
+      "question": "El sistema contra incendios y explosiones está compuesto por:",
+      "options": [
+        { "text": "Alternador.", "correct": false },
+        { "text": "Silencioso.", "correct": false },
+        { "text": "Extintores.", "correct": true },
+        { "text": "Retardador.", "correct": false }
+      ]
+    },
+   {
       question: '¿Qué significa DS9?',
       options: [
         { text: "Diesel sobrealimentado de 9 dm3", correct: true },
