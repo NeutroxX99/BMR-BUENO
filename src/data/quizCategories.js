@@ -1129,4 +1129,4 @@ export const quizCategories = {
 ]
 }
 
-  
+console.log("Cargando categorías...", quizCategories);
