@@ -1125,60 +1125,7 @@ export const quizCategories = {
       { "text": "IVECO", "correct": false }
     ]
   },
-  {
-    "question": "Los componentes del sistema de escape son:",
-    "options": [
-      { "text": "Baterías/alternador/luces/master.", "correct": false },
-      { "text": "Turbocompresor/abrazaderas/silencioso/tramo flexible.", "correct": true },
-      { "text": "Frenos/calderines/retardador/pinzas.", "correct": false },
-      { "text": "Bomba de alimentación/deposito auxiliar/llave T/inyector.", "correct": false }
-    ]
-  },
-  {
-    "question": "¿Cuántos paneles hay en el salpicadero?",
-    "options": [
-      { "text": "4 y el indicador de ruedas.", "correct": true },
-      { "text": "5", "correct": false },
-      { "text": "6", "correct": false },
-      { "text": "5 y el indicador de ruedas.", "correct": false }
-    ]
-  },
-  {
-    "question": "¿Qué es lo que indica la luz roja en el panel de accesorios?",
-    "options": [
-      { "text": "Rueda pinchada.", "correct": false },
-      { "text": "Falta de combustible.", "correct": false },
-      { "text": "Baja presión de aceite motor.", "correct": true },
-      { "text": "Filtro sucio.", "correct": false }
-    ]
-  },
-  {
-    "question": "¿Dónde se ve indicado el estado de la carga de baterías?",
-    "options": [
-      { "text": "En el panel de accesorios.", "correct": false },
-      { "text": "En el panel de indicadores del vehículo.", "correct": true },
-      { "text": "En el panel de interruptores.", "correct": false },
-      { "text": "En el Panel de control.", "correct": false }
-    ]
-  },
-  {
-    "question": "El sistema de explosión y contra incendios proporciona...",
-    "options": [
-      { "text": "3 acciones de extinción de incendios.", "correct": false },
-      { "text": "2 acciones de contra explosiones.", "correct": false },
-      { "text": "2 acciones de supresión de explosiones.", "correct": true },
-      { "text": "3 combinaciones de ambas.", "correct": false }
-    ]
-  },
-  {
-    "question": "El sistema contra incendios y explosiones está compuesto por:",
-    "options": [
-      { "text": "Alternador.", "correct": false },
-      { "text": "Silencioso.", "correct": false },
-      { "text": "Extintores.", "correct": true },
-      { "text": "Retardador.", "correct": false }
-    ]
-  }
+
 
 ],
 ]
