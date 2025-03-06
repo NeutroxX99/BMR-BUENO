@@ -82,7 +82,7 @@ export const quizCategories = {
       ]
     },
     {
-      "question": "El sistema de explosión y contra incendios proporciona...",
+      question: "El sistema de explosión y contra incendios proporciona...",
       "options": [
         { "text": "3 acciones de extinción de incendios.", "correct": false },
         { "text": "2 acciones de contra explosiones.", "correct": false },
@@ -91,12 +91,12 @@ export const quizCategories = {
       ]
     },
     {
-      "question": "El sistema contra incendios y explosiones está compuesto por:",
-      "options": [
-        { "text": "Alternador.", "correct": false },
-        { "text": "Silencioso.", "correct": false },
-        { "text": "Extintores.", "correct": true },
-        { "text": "Retardador.", "correct": false }
+      question: "El sistema contra incendios y explosiones está compuesto por:",
+      options: [
+        { text: "Alternador.", "correct": false },
+        { text: "Silencioso.", "correct": false },
+        { text: "Extintores.", "correct": true },
+        { text: "Retardador.", "correct": false }
       ]
     },
    {
