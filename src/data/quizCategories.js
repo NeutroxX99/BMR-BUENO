@@ -104,7 +104,7 @@ export const quizCategories = {
       options: [
         { text: "Diesel sobrealimentado de 9 dm3", correct: true },
         { text: "Diesel supercompensado de 9 cilindros", correct: false },
-        { text: "Diesel sobrealimentado de 9000 dm3", correct: false },
+        { text: "Diesel sobrealimentado de 9000 dm3", correct: false }
       ],
     },
     {
@@ -112,7 +112,7 @@ export const quizCategories = {
       options: [
         { text: "14170 kg", correct: false },
         { text: "15400 kg", correct: true },
-        { text: "11900 kg", correct: false },
+        { text: "11900 kg", correct: false }
       ],
     },
     {
@@ -120,7 +120,7 @@ export const quizCategories = {
       options: [
         { text: "30%", correct: false },
         { text: "50%", correct: false },
-        { text: "60%", correct: true },
+        { text: "60%", correct: true }
       ],
     },
     {
@@ -128,7 +128,7 @@ export const quizCategories = {
       options: [
         { text: "10-15 l", correct: false },
         { text: "16-20 l", correct: true },
-        { text: "14-18 l", correct: false },
+        { text: "14-18 l", correct: false }
       ],
     },
     {
@@ -136,7 +136,7 @@ export const quizCategories = {
       options: [
         { text: "6 en línea", correct: true },
         { text: "8 en línea", correct: false },
-        { text: "6 en V", correct: false },
+        { text: "6 en V", correct: false }
       ],
     },
     {
@@ -144,7 +144,7 @@ export const quizCategories = {
       options: [
         { text: "110/275", correct: false },
         { text: "275/110", correct: true },
-        { text: "110/325", correct: false },
+        { text: "110/325", correct: false }
       ],
     },
     {
@@ -152,7 +152,7 @@ export const quizCategories = {
       options: [
         { text: "Alta presión aceite motor", correct: false },
         { text: "Freno de emergencia desactivado", correct: false },
-        { text: "Alta temperatura aceite CV", correct: true },
+        { text: "Alta temperatura aceite CV", correct: true }
       ],
     },
     {
@@ -160,7 +160,7 @@ export const quizCategories = {
       options: [
         { text: "Se enciende su indicador luminoso", correct: false },
         { text: "Se escucha un zumbador", correct: false },
-        { text: "La a y la b son correctas", correct: true },
+        { text: "La a y la b son correctas", correct: true }
       ],
     },
     {
@@ -168,7 +168,7 @@ export const quizCategories = {
       options: [
         { text: "El master está apagado y el vehículo está en marcha", correct: false },
         { text: "El master está encendido y el motor está apagado", correct: true },
-        { text: "El master está apagado y el motor está apagado", correct: false },
+        { text: "El master está apagado y el motor está apagado", correct: false }
       ],
     },
     {
@@ -176,7 +176,7 @@ export const quizCategories = {
       options: [
         { text: "Panel de indicadores del vehículo", correct: false },
         { text: "Panel de accesorios", correct: false },
-        { text: "Panel de indicadores del GMP", correct: true },
+        { text: "Panel de indicadores del GMP", correct: true }
       ],
     },
     {
@@ -185,7 +185,7 @@ export const quizCategories = {
         { text: "Alta temperatura refrigerante motor, más de 103º", correct: false },
         { text: "Alta temperatura CV, inferior a 145º", correct: false },
         { text: "Baja presión aceite motor, inferior a 0'9 bar", correct: true },
-        { text: "Alta presión del circuito de frenos, superior a 5 bar", correct: false },
+        { text: "Alta presión del circuito de frenos, superior a 5 bar", correct: false }
       ],
     },
     {
@@ -193,7 +193,7 @@ export const quizCategories = {
       options: [
         { text: "Precalientan el aire de la admisión", correct: false },
         { text: "Protegen los circuitos eléctricos de sobrecargas", correct: true },
-        { text: "Mantienen constante la temperatura de los calderines", correct: false },
+        { text: "Mantienen constante la temperatura de los calderines", correct: false }
       ],
     },
 
@@ -202,7 +202,7 @@ export const quizCategories = {
       options: [
         { text: "2 sg", correct: true},
         { text: "1 sg", correct: false },
-        { text: "3 sg", correct: false },
+        { text: "3 sg", correct: false }
       ],
     },
     {
@@ -210,7 +210,7 @@ export const quizCategories = {
       options: [
         { text: "Un detector continuo", correct: true },
         { text: "Dos cilindros extintores", correct: false },
-        { text: "Dos cajas de control", correct: false },
+        { text: "Dos cajas de control", correct: false }
       ],
     },
     {
@@ -218,7 +218,7 @@ export const quizCategories = {
       options: [
         { text: "Sobrecalentamiento (intermitente)", correct: true },
         { text: "Fuego (continua)", correct: false },
-        { text: "Las dos anteriores son correctas", correct: false },
+        { text: "Las dos anteriores son correctas", correct: false }
       ],
     },
     {
@@ -226,7 +226,7 @@ export const quizCategories = {
       options: [
         { text: "Un detector óptico", correct: false },
         { text: "Dos detectores ópticos", correct: false },
-        { text: "Tres detectores ópticos", correct: true },
+        { text: "Tres detectores ópticos", correct: true }
       ],
     },
     {
@@ -234,7 +234,7 @@ export const quizCategories = {
       options: [
         { text: "Un detector óptico", correct: false},
         { text: "Dos o más detectores ópticos", correct: true},
-        { text: "Ninguna de las anteriores es correcta", correct: false },
+        { text: "Ninguna de las anteriores es correcta", correct: false }
       ],
     },
     {
@@ -242,7 +242,7 @@ export const quizCategories = {
       options: [
         { text: "Uno o más detectores ópticos", correct: true },
         { text: "Dos o más detectores ópticos", correct: false },
-        { text: "Ninguna de las anteriores es correcta", correct: false },
+        { text: "Ninguna de las anteriores es correcta", correct: false }
       ],
     },
     {
@@ -250,7 +250,7 @@ export const quizCategories = {
       options: [
         { text: "25 sg", correct: true },
         { text: "15 sg", correct: false },
-        { text: "35 sg", correct: false },
+        { text: "35 sg", correct: false }
       ],
     },
     {
@@ -258,7 +258,7 @@ export const quizCategories = {
       options: [
         { text: "20 sg", correct: false },
         { text: "17 sg", correct: true },
-        { text: "30 sg", correct: false },
+        { text: "30 sg", correct: false }
       ],
     },
     {
@@ -266,7 +266,7 @@ export const quizCategories = {
       options: [
         { text: "De la 1º a la 4º", correct: true },
         { text: "De la 1º a la 3º", correct: false },
-        { text: "De la 2º a la 4º", correct: false },
+        { text: "De la 2º a la 4º", correct: false }
       ],
     },
     {
@@ -274,7 +274,7 @@ export const quizCategories = {
       options: [
         { text: "Se bloquean los diferenciales", correct: true },
         { text: "Se activa la tracción 6x6", correct: false },
-        { text: "Los puentes se bloquean impidiendo el movimiento del vehículo", correct: false },
+        { text: "Los puentes se bloquean impidiendo el movimiento del vehículo", correct: false }
       ],
     },
     {
@@ -282,7 +282,7 @@ export const quizCategories = {
       options: [
         { text: "70-150º", correct: false },
         { text: "20-70º", correct: false },
-        { text: "70-103º", correct: true },
+        { text: "70-103º", correct: true }
       ],
     },
     {
@@ -290,7 +290,7 @@ export const quizCategories = {
       options: [
         { text: "A que hemos seleccionado la gama D", correct: false },
         { text: "A que está activado el bloqueo de puentes", correct: false },
-        { text: "A que el filtro de aire se encuentra obstruido", correct: true },
+        { text: "A que el filtro de aire se encuentra obstruido", correct: true }
       ],
     },
     {
@@ -298,7 +298,7 @@ export const quizCategories = {
       options: [
         { text: "1", correct: false },
         { text: "2", correct: false },
-        { text: "3", correct: true },
+        { text: "3", correct: true }
       ],
     },
     {
@@ -306,7 +306,7 @@ export const quizCategories = {
       options: [
         { text: "30 m y 11000 kg", correct: false },
         { text: "25 m y 11000 kg", correct: true },
-        { text: "20 m y 10000 kg", correct: false },
+        { text: "20 m y 10000 kg", correct: false }
       ],
     },
     {
@@ -314,7 +314,7 @@ export const quizCategories = {
       options: [
         { text: "1º velocidad", correct: false },
         { text: "2º velocidad", correct: true },
-        { text: "3º velocidad", correct: false },
+        { text: "3º velocidad", correct: false }
       ],
     },
     {
@@ -322,7 +322,7 @@ export const quizCategories = {
       options: [
         { text: "No repostar", correct: false },
         { text: "Repostar 20 l más", correct: false },
-        { text: "Repostar 20 l menos de la capacidad total", correct: true },
+        { text: "Repostar 20 l menos de la capacidad total", correct: true }
       ],
     },
         {
@@ -331,7 +331,7 @@ export const quizCategories = {
             { text: "Mayor o menor amplitud del giro del vehículo", correct: true },
             { text: "Mayor o menor velocidad del vehículo", correct: false },
             { text: "Parada del vehículo", correct: false },
-            { text: "Marchar despacio", correct: false },
+            { text: "Marchar despacio", correct: false }
           ],
         },
         {
@@ -340,7 +340,7 @@ export const quizCategories = {
             { text: "Rápido", correct: false },
             { text: "Despacio", correct: true },
             { text: "Atrás", correct: false },
-            { text: "Adelante", correct: false },
+            { text: "Adelante", correct: false }
           ],
         },
         {
@@ -349,7 +349,7 @@ export const quizCategories = {
             { text: "Adelante", correct: false },
             { text: "Parar motores", correct: false },
             { text: "Alto", correct: true },
-            { text: "Queda menos para el alto", correct: false },
+            { text: "Queda menos para el alto", correct: false }
           ],
         },
         {
@@ -358,7 +358,7 @@ export const quizCategories = {
             { text: "Atrás", correct: true },
             { text: "Delante", correct: false },
             { text: "Derecha", correct: false },
-            { text: "Despacio", correct: false },
+            { text: "Despacio", correct: false }
           ],
         },
         {
@@ -367,7 +367,7 @@ export const quizCategories = {
             { text: "30%", correct: false },
             { text: "90%", correct: false },
             { text: "45%", correct: false },
-            { text: "60%", correct: true },
+            { text: "60%", correct: true }
           ],
         },
         {
@@ -376,7 +376,7 @@ export const quizCategories = {
             { text: "30%", correct: true },
             { text: "60%", correct: false },
             { text: "45%", correct: false },
-            { text: "1.2%", correct: false },
+            { text: "1.2%", correct: false }
           ],
         },
         {
@@ -385,7 +385,7 @@ export const quizCategories = {
             { text: "60%", correct: false },
             { text: "60cm", correct: true },
             { text: "30%", correct: false },
-            { text: "30cm", correct: false },
+            { text: "30cm", correct: false }
           ],
         },
         {
@@ -394,7 +394,7 @@ export const quizCategories = {
             { text: "60 cm", correct: false },
             { text: "3,5 m", correct: false },
             { text: "1,2 m", correct: true },
-            { text: "1,5 m", correct: false },
+            { text: "1,5 m", correct: false }
           ],
         },
         {
@@ -403,7 +403,7 @@ export const quizCategories = {
             { text: "35 L /100Km", correct: false },
             { text: "0,5 L /Km", correct: false },
             { text: "36 L/ 100 Km", correct: true },
-            { text: "26 L/ 100Km", correct: false },
+            { text: "26 L/ 100Km", correct: false }
           ],
         },
         {
@@ -412,7 +412,7 @@ export const quizCategories = {
             { text: "45L /100Km", correct: false },
             { text: "0,5L /Km", correct: false },
             { text: "42L / 100Km", correct: true },
-            { text: "36L /100Km", correct: false },
+            { text: "36L /100Km", correct: false }
           ],
         },
         {
@@ -421,7 +421,7 @@ export const quizCategories = {
             { text: "192L", correct: false },
             { text: "131L", correct: false },
             { text: "275 L", correct: true },
-            { text: "147L", correct: false },
+            { text: "147L", correct: false }
           ],
         },
         {
@@ -430,7 +430,7 @@ export const quizCategories = {
             { text: "191 L", correct: false },
             { text: "135 L", correct: false },
             { text: "110 L", correct: true },
-            { text: "193 L", correct: false },
+            { text: "193 L", correct: false }
           ],
         },
         {
@@ -439,7 +439,7 @@ export const quizCategories = {
             { text: "9 L", correct: false },
             { text: "9.5 L", correct: false },
             { text: "13 L", correct: true },
-            { text: "15 L", correct: false },
+            { text: "15 L", correct: false }
           ],
         },
         {
@@ -448,7 +448,7 @@ export const quizCategories = {
             { text: "1", correct: false },
             { text: "2", correct: true },
             { text: "3", correct: false },
-            { text: "5", correct: false },
+            { text: "5", correct: false }
           ],
         },
         {
@@ -457,7 +457,7 @@ export const quizCategories = {
             { text: "8 en línea", correct: false },
             { text: "4 en línea", correct: false },
             { text: "6 en línea", correct: true },
-            { text: "10 en línea", correct: false },
+            { text: "10 en línea", correct: false }
           ],
         },
         {
@@ -466,7 +466,7 @@ export const quizCategories = {
             { text: "320cv", correct: false },
             { text: "315cv", correct: false },
             { text: "330cv", correct: false },
-            { text: "310cv", correct: true },
+            { text: "310cv", correct: true }
           ],
         },
         {
@@ -475,7 +475,7 @@ export const quizCategories = {
             { text: "Por aire, circuito cerrado y presurizado", correct: false },
             { text: "Por líquido, circuito abierto y presurizado", correct: false },
             { text: "Por líquido, circuito cerrado y presurizado", correct: true },
-            { text: "Por aire, circuito abierto y presurizado", correct: false },
+            { text: "Por aire, circuito abierto y presurizado", correct: false }
           ],
         },
         {
@@ -484,7 +484,7 @@ export const quizCategories = {
             { text: "6.150 Cm", correct: false },
             { text: "6.250 Cm", correct: false },
             { text: "6.150 Mm", correct: true },
-            { text: "6.250 Mm", correct: false },
+            { text: "6.250 Mm", correct: false }
           ],
         },
         {
@@ -493,7 +493,7 @@ export const quizCategories = {
             { text: "2,5m", correct: false },
             { text: "2m", correct: true },
             { text: "2.35m", correct: false },
-            { text: "1.90m", correct: false },
+            { text: "1.90m", correct: false }
           ],
         },
         {
@@ -502,7 +502,7 @@ export const quizCategories = {
             { text: "Costado izquierdo", correct: true },
             { text: "Costado derecho", correct: false },
             { text: "Parte frontal", correct: false },
-            { text: "Ninguna de las anteriores", correct: false },
+            { text: "Ninguna de las anteriores", correct: false }
           ],
         },
         {
@@ -511,7 +511,7 @@ export const quizCategories = {
             { text: "Costado izquierdo", correct: false },
             { text: "Costado derecho", correct: true },
             { text: "Parte trasera", correct: false },
-            { text: "Ninguna de las anteriores", correct: false },
+            { text: "Ninguna de las anteriores", correct: false }
           ],
         },
         {
@@ -520,7 +520,7 @@ export const quizCategories = {
             { text: "Costado derecho", correct: false },
             { text: "Costado izquierdo", correct: true },
             { text: "Parte frontal", correct: false },
-            { text: "Ninguna de las anteriores", correct: false },
+            { text: "Ninguna de las anteriores", correct: false }
           ],
         },
         {
@@ -528,7 +528,7 @@ export const quizCategories = {
           options: [
             { text: "14170 kg", correct: false },
             { text: "15400 kg", correct: true },
-            { text: "11900 kg", correct: false },
+            { text: "11900 kg", correct: false }
           ],
         },
         {
@@ -536,7 +536,7 @@ export const quizCategories = {
           options: [
             { text: "250L", correct: false },
             { text: "500L", correct: false },
-            { text: "300L", correct: true },
+            { text: "300L", correct: true }
           ],
         },
         {
@@ -544,7 +544,7 @@ export const quizCategories = {
           options: [
             { text: "Sistema de enfriamiento", correct: true },
             { text: "Sistema de climatización", correct: false },
-            { text: "Sistema de refrigeración", correct: false },
+            { text: "Sistema de refrigeración", correct: false }
           ],
         },
         {
@@ -552,7 +552,7 @@ export const quizCategories = {
           options: [
             { text: "Motor V8", correct: false },
             { text: "Motor en línea", correct: true },
-            { text: "Motor en V", correct: false },
+            { text: "Motor en V", correct: false }
           ],
         },
         {
@@ -560,7 +560,7 @@ export const quizCategories = {
           options: [
             { text: "3.5 toneladas", correct: false },
             { text: "5 toneladas", correct: true },
-            { text: "10 toneladas", correct: false },
+            { text: "10 toneladas", correct: false }
           ],
         },
         {
@@ -568,7 +568,7 @@ export const quizCategories = {
           options: [
             { text: "Gasolina", correct: false },
             { text: "Diesel", correct: true },
-            { text: "Eléctrico", correct: false },
+            { text: "Eléctrico", correct: false }
           ],
         },
         {
@@ -576,7 +576,7 @@ export const quizCategories = {
           options: [
             { text: "2 ejes", correct: false },
             { text: "4 ejes", correct: true },
-            { text: "6 ejes", correct: false },
+            { text: "6 ejes", correct: false }
           ],
         },
         {
@@ -584,7 +584,7 @@ export const quizCategories = {
           options: [
             { text: "24 pulgadas", correct: true },
             { text: "20 pulgadas", correct: false },
-            { text: "26 pulgadas", correct: false },
+            { text: "26 pulgadas", correct: false }
           ],
         },
         {
@@ -592,7 +592,7 @@ export const quizCategories = {
           options: [
             { text: "Suspensión independiente", correct: false },
             { text: "Suspensión dependiente", correct: true },
-            { text: "Suspensión neumática", correct: false },
+            { text: "Suspensión neumática", correct: false }
           ],
         },
         {
@@ -600,7 +600,7 @@ export const quizCategories = {
           options: [
             { text: "Dirección asistida", correct: true },
             { text: "Dirección mecánica", correct: false },
-            { text: "Dirección hidráulica", correct: false },
+            { text: "Dirección hidráulica", correct: false }
           ],
         },
         {
@@ -608,7 +608,7 @@ export const quizCategories = {
           options: [
             { text: "Frenos de disco", correct: true },
             { text: "Frenos de tambor", correct: false },
-            { text: "Frenos de tambor y disco", correct: false },
+            { text: "Frenos de tambor y disco", correct: false }
           ],
         },
         {
@@ -616,7 +616,7 @@ export const quizCategories = {
           options: [
             { text: "En la parte trasera", correct: false },
             { text: "En la parte delantera", correct: true },
-            { text: "En el medio del vehículo", correct: false },
+            { text: "En el medio del vehículo", correct: false }
           ],
         },
         {
@@ -624,7 +624,7 @@ export const quizCategories = {
           options: [
             { text: "Neumáticos de carretera", correct: false },
             { text: "Neumáticos todoterreno", correct: true },
-            { text: "Neumáticos de competición", correct: false },
+            { text: "Neumáticos de competición", correct: false }
           ],
         },
         {
@@ -632,7 +632,7 @@ export const quizCategories = {
           options: [
             { text: "8 cilindros", correct: false },
             { text: "6 cilindros", correct: true },
-            { text: "4 cilindros", correct: false },
+            { text: "4 cilindros", correct: false }
           ],
         },
         {
@@ -640,7 +640,7 @@ export const quizCategories = {
           options: [
             { text: "Gas", correct: false },
             { text: "Eléctrico", correct: false },
-            { text: "Diesel", correct: true },
+            { text: "Diesel", correct: true }
           ],
         },
         {
@@ -648,7 +648,7 @@ export const quizCategories = {
           options: [
             { text: "120 Ah", correct: true },
             { text: "100 Ah", correct: false },
-            { text: "150 Ah", correct: false },
+            { text: "150 Ah", correct: false }
           ],
         },
         {
@@ -656,7 +656,7 @@ export const quizCategories = {
           options: [
             { text: "Luces halógenas", correct: false },
             { text: "Luces LED", correct: true },
-            { text: "Luces incandescentes", correct: false },
+            { text: "Luces incandescentes", correct: false }
           ],
         },
         {
@@ -664,7 +664,7 @@ export const quizCategories = {
           options: [
             { text: "Manual", correct: false },
             { text: "Automática", correct: true },
-            { text: "Semiautomática", correct: false },
+            { text: "Semiautomática", correct: false }
           ],
         },
         {
@@ -672,7 +672,7 @@ export const quizCategories = {
           options: [
             { text: "5L", correct: true },
             { text: "3L", correct: false },
-            { text: "8L", correct: false },
+            { text: "8L", correct: false }
           ],
         },
         {
@@ -680,7 +680,7 @@ export const quizCategories = {
           options: [
             { text: "15 segundos", correct: false },
             { text: "10 segundos", correct: false },
-            { text: "12 segundos", correct: true },
+            { text: "12 segundos", correct: true }
   ],
 },
 [
@@ -690,7 +690,7 @@ export const quizCategories = {
       { text: "1er puente 13L, 2º puente 9, y 3er puente 8,5L.", correct: false },
       { text: "Circuito de dirección 6L.", correct: false },
       { text: "Cubos de rueda (cada uno) 1,25 litros.", correct: true },
-      { text: "Depósitos de combustible, principal 193L, y auxiliar 149L.", correct: false },
+      { text: "Depósitos de combustible, principal 193L, y auxiliar 149L.", correct: false }
     ],
   },
   {
@@ -699,7 +699,7 @@ export const quizCategories = {
       { text: "Fabricante: IVEC O", correct: false },
       { text: "Potencia: 310 cv.", correct: true },
       { text: "Refrigeración del vehículo: por aire.", correct: false },
-      { text: "Ninguna de las anteriores.", correct: false },
+      { text: "Ninguna de las anteriores.", correct: false }
     ],
   },
   {
@@ -708,7 +708,7 @@ export const quizCategories = {
       { text: "Tensión del sistema: 24/28V.", correct: false },
       { text: "Capacidad máxima del alternador 180 A.", correct: true },
       { text: "Potencia del motor de arranque: 6,7kW.", correct: false },
-      { text: "Ninguna de las anteriores.", correct: false },
+      { text: "Ninguna de las anteriores.", correct: false }
     ],
   },
   {
@@ -717,7 +717,7 @@ export const quizCategories = {
       { text: "Gasóleo A.", correct: true },
       { text: "Sin plomo 98.", correct: false },
       { text: "Mezcla de gasolina súper y aceite 15/40W.", correct: false },
-      { text: "Gasóleo B.", correct: false },
+      { text: "Gasóleo B.", correct: false }
     ],
   },
   {
@@ -726,7 +726,7 @@ export const quizCategories = {
       { text: "Presión máxima de aceite 7 bar.", correct: false },
       { text: "Presión normal de aceite 3-9 bar.", correct: false },
       { text: "Presión mínima de aceite 0,7 bar.", correct: true },
-      { text: "Ninguna de las anteriores.", correct: false },
+      { text: "Ninguna de las anteriores.", correct: false }
     ],
   },
   {
@@ -735,7 +735,7 @@ export const quizCategories = {
       { text: "70-103 grados C.", correct: true },
       { text: "73-90 grados C.", correct: false },
       { text: "70-113 grados C.", correct: false },
-      { text: "63-93 grados C.", correct: false },
+      { text: "63-93 grados C.", correct: false }
     ],
   },
   {
@@ -744,7 +744,7 @@ export const quizCategories = {
       { text: "4 baterías de 12v y 150A/h.", correct: true },
       { text: "2 grupos de 2 en paralelo.", correct: false },
       { text: "Nos proporcionan 24V y 300A/h.", correct: false },
-      { text: "4 baterías continuas.", correct: false },
+      { text: "4 baterías continuas.", correct: false }
     ],
   },
   {
@@ -753,7 +753,7 @@ export const quizCategories = {
       { text: "2 de 16L.", correct: false },
       { text: "4 de 16L.", correct: false },
       { text: "4 de 18L.", correct: false },
-      { text: "2 de 18L.", correct: true },
+      { text: "2 de 18L.", correct: true }
     ],
   },
   {
@@ -762,7 +762,7 @@ export const quizCategories = {
       { text: "1 de 2,5L.", correct: false },
       { text: "2 de 2L.", correct: false },
       { text: "12 de 2,5L.", correct: false },
-      { text: "de 2L.", correct: true },
+      { text: "de 2L.", correct: true }
     ],
   },
   {
@@ -771,7 +771,7 @@ export const quizCategories = {
       { text: "No es independiente.", correct: false },
       { text: "Gas: hidrógeno seco.", correct: false },
       { text: "Liquido: hidrógeno mineral hidráulico.", correct: false },
-      { text: "Tipo: Hidroneumática.", correct: true },
+      { text: "Tipo: Hidroneumática.", correct: true }
     ],
   },
   {
@@ -780,7 +780,7 @@ export const quizCategories = {
       { text: "Carretera 2,8/2,2/1,8.", correct: true },
       { text: "Todo terreno 1,5/1,1/1,0.", correct: false },
       { text: "Siempre la misma en todas las ruedas.", correct: false },
-      { text: "Mixta: 2,5/2,5/2,5", correct: false },
+      { text: "Mixta: 2,5/2,5/2,5", correct: false }
     ],
   },
   {
@@ -789,7 +789,7 @@ export const quizCategories = {
       { text: "3.500 kg.", correct: false },
       { text: "4.500 kg.", correct: true },
       { text: "5.500 kg.", correct: false },
-      { text: "4.000 kg.", correct: false },
+      { text: "4.000 kg.", correct: false }
     ],
   },
   {
@@ -798,7 +798,7 @@ export const quizCategories = {
       { text: "Tipo de agente extintor HALON 1201.", correct: false },
       { text: "2 cilindros de 3,5 kg.", correct: true },
       { text: "Peso del cilindro lleno 12, 01 kg.", correct: false },
-      { text: "Ninguna de las anteriores.", correct: false },
+      { text: "Ninguna de las anteriores.", correct: false }
     ],
   },
   {
@@ -807,7 +807,7 @@ export const quizCategories = {
       { text: "Luz testigo de control de emergencia.", correct: false },
       { text: "Disyuntores térmicos.", correct: false },
       { text: "Toma auxiliar de corriente.", correct: true },
-      { text: "Toma para el cable esclavo.", correct: false },
+      { text: "Toma para el cable esclavo.", correct: false }
     ],
   },
   {
@@ -816,7 +816,7 @@ export const quizCategories = {
       { text: "Testigo de activación del freno de emergencia.", correct: false },
       { text: "Testigo de activación de marcha atrás.", correct: true },
       { text: "Testigo de luces de carretera.", correct: false },
-      { text: "Pulsador de arranque.", correct: false },
+      { text: "Pulsador de arranque.", correct: false }
     ],
   },
   {
@@ -825,7 +825,7 @@ export const quizCategories = {
       { text: "Testigo de luces de emergencia.", correct: false },
       { text: "Testigo de control de emergencia.", correct: false },
       { text: "Toma auxiliar de corriente.", correct: true },
-      { text: "Disyuntores térmicos.", correct: false },
+      { text: "Disyuntores térmicos.", correct: false }
     ],
   },
   {
@@ -834,7 +834,7 @@ export const quizCategories = {
       { text: "Indicador de combustible del depósito auxiliar.", correct: true },
       { text: "Voltímetro.", correct: false },
       { text: "Indicadores de presión de aire del circuito anterior y posterior.", correct: false },
-      { text: "Indicador de presión de ruedas.", correct: false },
+      { text: "Indicador de presión de ruedas.", correct: false }
     ],
   },
   {
@@ -843,7 +843,7 @@ export const quizCategories = {
       { text: "En el panel de indicadores del GPM.", correct: true },
       { text: "En el panel de interruptores.", correct: false },
       { text: "En el panel de indicadores del vehículo.", correct: false },
-      { text: "No existe ese testigo.", correct: false },
+      { text: "No existe ese testigo.", correct: false }
     ],
   },
   {
@@ -852,7 +852,7 @@ export const quizCategories = {
       { text: "Vehículo parado 24V.", correct: false },
       { text: "Vehículo en marcha 28V.", correct: false },
       { text: "Siempre 24V.", correct: true },
-      { text: "Ninguna de las anteriores.", correct: false },
+      { text: "Ninguna de las anteriores.", correct: false }
     ],
   },
   {
@@ -861,7 +861,7 @@ export const quizCategories = {
       { text: "Ciclón.", correct: false },
       { text: "Filtro principal.", correct: true },
       { text: "Filtro del turbocompresor.", correct: false },
-      { text: "Filtro rotativo.", correct: false },
+      { text: "Filtro rotativo.", correct: false }
     ],
   },
   {
@@ -870,7 +870,7 @@ export const quizCategories = {
       { text: "Limitar la presión del sistema de aire acondicionado.", correct: false },
       { text: "Limitar la presión del sistema de combustible.", correct: false },
       { text: "Limitar la presión del sistema de combustible y purgar continuamente el mismo.", correct: true },
-      { text: "Limitar la cantidad de combustible que entra en los depósitos.", correct: false },
+      { text: "Limitar la cantidad de combustible que entra en los depósitos.", correct: false }
     ],
   },
   {
@@ -879,7 +879,7 @@ export const quizCategories = {
       { text: "Aumentar la cantidad de aire que entra en los cilindros.", correct: true },
       { text: "Aumentar la cantidad de combustible que entra en los cilindros.", correct: false },
       { text: "Aumentar la cantidad de aceite que entra en el motor.", correct: false },
-      { text: "Aumentar la cantidad de aire que entra en los filtros.", correct: false },
+      { text: "Aumentar la cantidad de aire que entra en los filtros.", correct: false }
     ],
   },
   {
@@ -888,7 +888,7 @@ export const quizCategories = {
       { text: "Es para enfriar la cámara de combate.", correct: false },
       { text: "Es para hacer funcionar los ventiladores que enfrían el radiador.", correct: true },
       { text: "Es para hacer funcionar el ventilador del aire acondicionado.", correct: false },
-      { text: "Ninguna de las anteriores.", correct: false },
+      { text: "Ninguna de las anteriores.", correct: false }
     ],
   },
   {
@@ -897,7 +897,7 @@ export const quizCategories = {
       { text: "Motor de arranque.", correct: false },
       { text: "Alternador.", correct: false },
       { text: "Imán de parada.", correct: false },
-      { text: "Todos los anteriores.", correct: true },
+      { text: "Todos los anteriores.", correct: true }
     ],
   },
   {
@@ -906,7 +906,7 @@ export const quizCategories = {
       { text: "Alternador.", correct: true },
       { text: "Cerebro electrónico.", correct: false },
       { text: "Baterías.", correct: false },
-      { text: "Todos los anteriores.", correct: false },
+      { text: "Todos los anteriores.", correct: false }
     ],
   },
   {
@@ -915,7 +915,7 @@ export const quizCategories = {
       { text: "El central.", correct: false },
       { text: "El anterior.", correct: true },
       { text: "El posterior.", correct: false },
-      { text: "Todos a la vez.", correct: false },
+      { text: "Todos a la vez.", correct: false }
     ],
   },
   {
@@ -924,7 +924,7 @@ export const quizCategories = {
       { text: "Retener por decantación el agua producida en la compresión del aire y sus impurezas.", correct: true },
       { text: "Absorber por medio del granulado el agua comprimida en la decantación.", correct: false },
       { text: "Filtrar el aire a través de un filtro grueso.", correct: false },
-      { text: "Ninguna de las anteriores.", correct: false },
+      { text: "Ninguna de las anteriores.", correct: false }
     ],
   },
   {
@@ -933,7 +933,7 @@ export const quizCategories = {
       { text: "El compresor.", correct: false },
       { text: "El secador de aire con regulador de presión.", correct: true },
       { text: "El cilindro neumático.", correct: false },
-      { text: "El turbocompresor.", correct: false },
+      { text: "El turbocompresor.", correct: false }
     ],
   },
   {
@@ -942,7 +942,7 @@ export const quizCategories = {
       { text: "1 en cada rueda.", correct: false },
       { text: "2 en cada rueda.", correct: false },
       { text: "2 en cada rueda anterior y 1 en las demás.", correct: true },
-      { text: "Las mismas en todas las ruedas.", correct: false },
+      { text: "Las mismas en todas las ruedas.", correct: false }
     ],
   },
   {
@@ -951,7 +951,7 @@ export const quizCategories = {
       { text: "Oleoneumática.", correct: true },
       { text: "Hidroneumática.", correct: false },
       { text: "Nitroneumática.", correct: false },
-      { text: "Todas son falsas.", correct: false },
+      { text: "Todas son falsas.", correct: false }
     ],
   },
   {
@@ -960,7 +960,7 @@ export const quizCategories = {
       { text: "Palanca para indicadores de giro y ráfagas.", correct: false },
       { text: "Palanca de mando de luces (cruce y carretera).", correct: false },
       { text: "Luces de intermitencia de emergencia.", correct: true },
-      { text: "Ninguno de los anteriores.", correct: false },
+      { text: "Ninguno de los anteriores.", correct: false }
     ],
   },
   {
@@ -969,7 +969,7 @@ export const quizCategories = {
       { text: "En la palanca del freno de emergencia.", correct: false },
       { text: "En las ruedas delanteras, que es donde necesita más presión.", correct: false },
       { text: "Debajo del pedal del acelerador.", correct: false },
-      { text: "A la salida del motor.", correct: true },
+      { text: "A la salida del motor.", correct: true }
     ],
   },
   {
@@ -978,7 +978,7 @@ export const quizCategories = {
       { text: "Cuando la temperatura del agua del motor sobrepasa los 109 grados C.", correct: false },
       { text: "Cuando la presión de aceite baja de los 7 bares.", correct: false },
       { text: "Cuando intentamos meter la marcha atrás y estamos en marcha.", correct: true },
-      { text: "Ninguna de las anteriores.", correct: false },
+      { text: "Ninguna de las anteriores.", correct: false }
     ],
   },
   {
@@ -987,7 +987,7 @@ export const quizCategories = {
       { text: "Autoblocantes.", correct: true },
       { text: "Semiblocantes.", correct: false },
       { text: "Blocantes.", correct: false },
-      { text: "Ninguna de las anteriores.", correct: false },
+      { text: "Ninguna de las anteriores.", correct: false }
     ],
   },
   {
@@ -996,7 +996,7 @@ export const quizCategories = {
       { text: "Selector de gamas de marchas.", correct: false },
       { text: "Cerebro electrónico.", correct: false },
       { text: "Sistema contraincendios.", correct: true },
-      { text: "Todas las anteriores.", correct: false },
+      { text: "Todas las anteriores.", correct: false }
     ],
   },
   {
@@ -1005,7 +1005,7 @@ export const quizCategories = {
       { text: "La velocidad del vehículo.", correct: false },
       { text: "Del número de revoluciones del motor.", correct: false },
       { text: "Del mecanismo antigás.", correct: true },
-      { text: "De la posición de la palanca de mando de la bomba de inyección.", correct: false },
+      { text: "De la posición de la palanca de mando de la bomba de inyección.", correct: false }
     ],
   },
   {
@@ -1014,7 +1014,7 @@ export const quizCategories = {
       { text: "Luces de posición reducidas.", correct: false },
       { text: "Luces de cruce y carretera.", correct: false },
       { text: "Cambios de dirección (intermitencias).", correct: false },
-      { text: "Luces de cruce, carretera y destellos.", correct: true },
+      { text: "Luces de cruce, carretera y destellos.", correct: true }
     ],
   },
   {
