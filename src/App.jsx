@@ -41,7 +41,7 @@ const Quiz = () => {
 
     setCategory(selectedCategory);
     setQuestions(finalQuestions);
-    setSelectedQuestionsCount(100); // Guardamos 40
+    setSelectedQuestionsCount(200);
     setTotalQuestionsCount(null); // Reiniciamos totalQuestionsCount
     setFailedQuestions([]);
     setCurrentQuestion(0);
