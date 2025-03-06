@@ -3,22 +3,24 @@ import { quizCategories } from "./data/quizCategories";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 
+// Función para barajar los elementos de un array
 const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
 
 const Quiz = () => {
-  const [failedQuestions, setFailedQuestions] = useState([]);
-  const [category, setCategory] = useState(null);
-  const [questions, setQuestions] = useState([]);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [score, setScore] = useState(0);
-  const [showScore, setShowScore] = useState(false);
-  const [shuffledOptions, setShuffledOptions] = useState([]);
-  const [showNext, setShowNext] = useState(false);
-  const [nota, setNota] = useState(0);
-  const [answered, setAnswered] = useState(false);
-  const [feedback, setFeedback] = useState(null);
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [failedQuestions, setFailedQuestions] = useState([]); // Preguntas falladas
+  const [category, setCategory] = useState(null); // Categoría seleccionada
+  const [questions, setQuestions] = useState([]); // Lista de preguntas
+  const [currentQuestion, setCurrentQuestion] = useState(0); // Pregunta actual
+  const [score, setScore] = useState(0); // Puntuación
+  const [showScore, setShowScore] = useState(false); // Si se muestra el puntaje
+  const [shuffledOptions, setShuffledOptions] = useState([]); // Opciones desordenadas
+  const [showNext, setShowNext] = useState(false); // Si se muestra el botón "Siguiente"
+  const [nota, setNota] = useState(0); // Nota final
+  const [answered, setAnswered] = useState(false); // Si ya se respondió una pregunta
+  const [feedback, setFeedback] = useState(null); // Retroalimentación para la respuesta
+  const [selectedOption, setSelectedOption] = useState(null); // Opción seleccionada
 
+  // Efecto para actualizar la nota cuando cambia la puntuación o las preguntas
   useEffect(() => {
     if (questions.length > 0) {
       setNota((score / questions.length) * 10);
@@ -27,58 +29,68 @@ const Quiz = () => {
     }
   }, [score, questions]);
 
+  // Función para iniciar el quiz
   const startQuiz = (selectedCategory, customQuestions = null) => {
-    const allQuestions = customQuestions || quizCategories[selectedCategory] || [];
-    console.log("Preguntas cargadas:", allQuestions.length);
-    
+    const allQuestions = customQuestions || quizCategories[selectedCategory];
+
+    if (!allQuestions || allQuestions.length === 0) {
+      console.error("No se encontraron preguntas en la categoría seleccionada.");
+      return;
+    }
+
     const shuffledAll = shuffleArray(allQuestions);
+
     setCategory(selectedCategory);
     setQuestions(shuffledAll);
-    setFailedQuestions([]);
+    setFailedQuestions([]); // Resetear preguntas falladas
     setCurrentQuestion(0);
     setScore(0);
     setShowScore(false);
     setFeedback(null);
     setShowNext(false);
-    setShuffledOptions(shuffleArray(shuffledAll[0]?.options || []));
-    setAnswered(false);
+    setShuffledOptions(shuffleArray(shuffledAll[0].options)); // Barajar opciones
+    setAnswered(false); // Resetear el estado de la respuesta
   };
 
+  // Función para manejar la respuesta seleccionada
   const handleAnswer = (option) => {
     if (!answered) {
       setSelectedOption(option);
       if (option.correct) {
-        setScore(prev => prev + 1);
+        setScore(prev => prev + 1); // Incrementar la puntuación si la respuesta es correcta
         setFeedback({ message: "¡Correcto!", correct: true });
       } else {
         const correctAnswer = questions[currentQuestion].options.find(opt => opt.correct).text;
         setFeedback({ message: `Respuesta correcta: ${correctAnswer}`, correct: false });
-        setFailedQuestions(prev => [...prev, questions[currentQuestion]]);
+        setFailedQuestions(prev => [...prev, questions[currentQuestion]]); // Agregar pregunta fallada
       }
       setShowNext(true);
-      setAnswered(true);
+      setAnswered(true); // Marcar que ya se respondió
     }
   };
 
+  // Función para ir a la siguiente pregunta
   const nextQuestion = () => {
     const nextIndex = currentQuestion + 1;
     if (nextIndex < questions.length) {
       setCurrentQuestion(nextIndex);
-      setShuffledOptions(shuffleArray(questions[nextIndex].options));
+      setShuffledOptions(shuffleArray(questions[nextIndex].options)); // Barajar opciones de la siguiente pregunta
       setFeedback(null);
       setShowNext(false);
       setAnswered(false);
     } else {
-      setShowScore(true);
+      setShowScore(true); // Mostrar el puntaje final cuando no hay más preguntas
     }
   };
 
+  // Función para reintentar las preguntas falladas
   const retryFailedQuestions = () => {
     if (failedQuestions.length > 0) {
-      startQuiz(category, failedQuestions);
+      startQuiz(category, failedQuestions); // Reiniciar el quiz con las preguntas falladas
     }
   };
 
+  // Mostrar la cantidad total de preguntas reales
   const totalDisplay = questions.length;
 
   return (
