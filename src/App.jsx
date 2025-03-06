@@ -7,23 +7,20 @@ import { SpeedInsights } from '@vercel/speed-insights/react';
 const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
 
 const Quiz = () => {
-  const [failedQuestions, setFailedQuestions] = useState([]); // Preguntas falladas
-  const [category, setCategory] = useState(null); // Categoría seleccionada
-  const [questions, setQuestions] = useState([]); // Lista de preguntas
-  const [currentQuestion, setCurrentQuestion] = useState(0); // Pregunta actual
-  const [score, setScore] = useState(0); // Puntuación
-  const [showScore, setShowScore] = useState(false); // Si se muestra el puntaje
-  const [shuffledOptions, setShuffledOptions] = useState([]); // Opciones desordenadas
-  const [showNext, setShowNext] = useState(false); // Si se muestra el botón "Siguiente"
-  const [nota, setNota] = useState(0); // Nota final
-  const [answered, setAnswered] = useState(false); // Si ya se respondió una pregunta
-  const [feedback, setFeedback] = useState(null); // Retroalimentación para la respuesta
-  const [totalQuestionsCount, setTotalQuestionsCount] = useState(null); // Total de preguntas
-  const [selectedQuestionsCount, setSelectedQuestionsCount] = useState(null); // Total de preguntas seleccionadas
-  const [failedQuestionsCount, setFailedQuestionsCount] = useState(null); // Total de preguntas falladas
-  const [selectedOption, setSelectedOption] = useState(null); // Opción seleccionada
+  const [failedQuestions, setFailedQuestions] = useState([]);
+  const [category, setCategory] = useState(null);
+  const [questions, setQuestions] = useState([]);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [score, setScore] = useState(0);
+  const [showScore, setShowScore] = useState(false);
+  const [shuffledOptions, setShuffledOptions] = useState([]);
+  const [showNext, setShowNext] = useState(false);
+  const [nota, setNota] = useState(0);
+  const [answered, setAnswered] = useState(false);
+  const [feedback, setFeedback] = useState(null);
+  const [totalQuestionsCount, setTotalQuestionsCount] = useState(0);
+  const [selectedOption, setSelectedOption] = useState(null);
 
-  // Efecto para actualizar la nota cuando cambia la puntuación o las preguntas
   useEffect(() => {
     if (questions.length > 0) {
       setNota((score / questions.length) * 10);
@@ -32,66 +29,60 @@ const Quiz = () => {
     }
   }, [score, questions]);
 
-  // Función para iniciar el quiz
   const startQuiz = (selectedCategory, customQuestions = null) => {
-    const allQuestions = customQuestions || quizCategories[selectedCategory];
+    const allQuestions = customQuestions || quizCategories[selectedCategory] || [];
+
+    console.log("Total de preguntas disponibles:", allQuestions.length); // Verificar en consola
+
     const shuffledAll = shuffleArray(allQuestions);
     
     setCategory(selectedCategory);
     setQuestions(shuffledAll);
-    setSelectedQuestionsCount(allQuestions.length);
-    setTotalQuestionsCount(allQuestions.length);
-    setFailedQuestions([]); // Resetear preguntas falladas
+    setTotalQuestionsCount(allQuestions.length); // Asegurar que este sea el número correcto
+    setFailedQuestions([]);
     setCurrentQuestion(0);
     setScore(0);
     setShowScore(false);
     setFeedback(null);
     setShowNext(false);
-    setShuffledOptions(shuffleArray(shuffledAll[0].options)); // Barajar opciones
-    setAnswered(false); // Resetear el estado de la respuesta
+    setShuffledOptions(shuffleArray(shuffledAll[0]?.options || []));
+    setAnswered(false);
   };
 
-  // Función para manejar la respuesta seleccionada
   const handleAnswer = (option) => {
     if (!answered) {
       setSelectedOption(option);
       if (option.correct) {
-        setScore(prev => prev + 1); // Incrementar la puntuación si la respuesta es correcta
+        setScore(prev => prev + 1);
         setFeedback({ message: "¡Correcto!", correct: true });
       } else {
         const correctAnswer = questions[currentQuestion].options.find(opt => opt.correct).text;
         setFeedback({ message: `Respuesta correcta: ${correctAnswer}`, correct: false });
-        setFailedQuestions(prev => [...prev, questions[currentQuestion]]); // Agregar pregunta fallada
+        setFailedQuestions(prev => [...prev, questions[currentQuestion]]);
       }
       setShowNext(true);
-      setAnswered(true); // Marcar que ya se respondió
+      setAnswered(true);
     }
   };
 
-  // Función para ir a la siguiente pregunta
   const nextQuestion = () => {
     const nextIndex = currentQuestion + 1;
     if (nextIndex < questions.length) {
       setCurrentQuestion(nextIndex);
-      setShuffledOptions(shuffleArray(questions[nextIndex].options)); // Barajar opciones de la siguiente pregunta
+      setShuffledOptions(shuffleArray(questions[nextIndex].options));
       setFeedback(null);
       setShowNext(false);
       setAnswered(false);
     } else {
-      setShowScore(true); // Mostrar el puntaje final cuando no hay más preguntas
+      setShowScore(true);
     }
   };
 
-  // Función para reintentar las preguntas falladas
   const retryFailedQuestions = () => {
     if (failedQuestions.length > 0) {
-      setFailedQuestionsCount(failedQuestions.length);
-      startQuiz(category, failedQuestions); // Reiniciar el quiz con las preguntas falladas
+      startQuiz(category, failedQuestions);
     }
   };
-
-  // Mostrar la cantidad total de preguntas
-  const totalDisplay = failedQuestionsCount ?? selectedQuestionsCount ?? totalQuestionsCount ?? questions.length;
 
   return (
     <div className="p-6 xl:max-w-[80%] max-w-[95%] mx-auto bg-white rounded-xl shadow-md space-y-4 text-center">
@@ -110,7 +101,7 @@ const Quiz = () => {
         </div>
       ) : showScore ? (
         <div>
-          <h2 className="text-xl font-bold text-green-600">Tu puntuación: {score} / {totalDisplay}</h2>
+          <h2 className="text-xl font-bold text-green-600">Tu puntuación: {score} / {totalQuestionsCount}</h2>
           <h2 className="text-xl font-bold text-green-600">Tu nota: {nota.toFixed(2)}</h2>
           <button
             onClick={() => setCategory(null)}
@@ -131,8 +122,8 @@ const Quiz = () => {
         <div>
           <div className="mb-5 text-xs w-full text-left flex flex-col xl:pt-9">
             <span className="text-gray-400 text-[70%]">{category}</span>
-            <div>Pregunta nº: {currentQuestion + 1} / {totalDisplay}</div>
-            <div className="font-semibold">Correctas: {score} / {totalDisplay}</div>
+            <div>Pregunta nº: {currentQuestion + 1} / {totalQuestionsCount}</div>
+            <div className="font-semibold">Correctas: {score} / {totalQuestionsCount}</div>
           </div>
           <h2 className="md:text-lg text-md font-semibold text-gray-700">{questions[currentQuestion]?.question}</h2>
           <div className="mt-4 space-y-4">
