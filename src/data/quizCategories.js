@@ -1,6 +1,114 @@
 export const quizCategories = {
   cuestionarios: [
     {
+      "question": "Del sistema contraincendios, decir la correcta:",
+      "options": [
+        { "text": "El cable de detección continua, en caso de rotura, el sistema sigue funcionando.", "correct": true },
+        { "text": "La activación de los extintores se efectúa solamente cuando el conductor presiona el botón de activación.", "correct": false },
+        { "text": "El proceso de descarga dura 3 segundos.", "correct": false },
+        { "text": "En caso de inoperatividad en el sistema, podemos hacer uso del vehículo.", "correct": false }
+      ]
+    },
+    {
+      "question": "Del sistema antiexplosiones, decir la correcta:",
+      "options": [
+        { "text": "Consta de 4 detectores ópticos.", "correct": false },
+        { "text": "Consta de 4 cilindros extintores, 1 por cada detector.", "correct": false },
+        { "text": "2 interruptores de emergencia, 1 para el conductor y otro para el jefe de vehículo.", "correct": false },
+        { "text": "Consta de 2 cilindros extintores.", "correct": true }
+      ]
+    },
+    {
+      "question": "En el selector de funcionamiento de la caja de control, ¿qué funciones nos encontramos?",
+      "options": [
+        { "text": "Inoperativo-operativo.", "correct": false },
+        { "text": "Apagado-encendido.", "correct": false },
+        { "text": "Normal-combate.", "correct": true },
+        { "text": "Ninguno de los anteriores.", "correct": false }
+      ]
+    },
+    {
+      "question": "Después del activado del sistema, ¿Qué normas deberemos seguir?",
+      "options": [
+        { "text": "El agente extintor es tóxico, y deberemos abandonar el vehículo inmediatamente.", "correct": false },
+        { "text": "El agente extintor no es tóxico, y no es necesario abandonar el vehículo.", "correct": true },
+        { "text": "El agente extintor no es tóxico, pero es obligatorio abandonar el vehículo.", "correct": false },
+        { "text": "Ninguna de las anteriores.", "correct": false }
+      ]
+    },
+    {
+      "question": "Del selector de velocidades, decir la correcta:",
+      "options": [
+        { "text": "1ª gama: 1ª y 2ª velocidad seleccionada.", "correct": false },
+        { "text": "2ª gama: 1ª a 4ª velocidad y viceversa.", "correct": true },
+        { "text": "D: 1ª a 6ª velocidad y viceversa.", "correct": false },
+        { "text": "Ninguna de las anteriores.", "correct": false }
+      ]
+    },
+    {
+      "question": "Al ser remolcado, hay que tener en cuenta una de las siguientes normas:",
+      "options": [
+        { "text": "Asegurarse de que al cambio de velocidades le llega corriente.", "correct": false },
+        { "text": "Situar la palanca de sentido de marcha en ECO.", "correct": false },
+        { "text": "No sobrepasar los 40 km/h.", "correct": true },
+        { "text": "Hacerlo con la barra de remolque.", "correct": false }
+      ]
+    },
+    {
+      "question": "¿Cuál es la pendiente máxima que puede subir el vehículo?",
+      "options": [
+        { "text": "60%", "correct": true },
+        { "text": "70%", "correct": false },
+        { "text": "30%", "correct": false },
+        { "text": "45%", "correct": false }
+      ]
+    },
+    {
+      "question": "¿Cuántos cilindros tiene el motor del vehículo?",
+      "options": [
+        { "text": "6 en línea.", "correct": true },
+        { "text": "6 en V.", "correct": false },
+        { "text": "8 en V.", "correct": false },
+        { "text": "8 en línea.", "correct": false }
+      ]
+    },
+    {
+      "question": "¿Capacidad del depósito auxiliar y principal?",
+      "options": [
+        { "text": "123 y 234.", "correct": false },
+        { "text": "147 y 191.", "correct": false },
+        { "text": "275 y 110.", "correct": true },
+        { "text": "234 y 123.", "correct": false }
+      ]
+    },
+    {
+      "question": "¿Potencia del motor del vehículo?",
+      "options": [
+        { "text": "310 CV.", "correct": true },
+        { "text": "124 CV.", "correct": false },
+        { "text": "380 CV.", "correct": false },
+        { "text": "(Opción faltante)", "correct": false }
+      ]
+    },
+    {
+      "question": "¿Cuál es la cilindrada del motor?",
+      "options": [
+        { "text": "9000 m3", "correct": false },
+        { "text": "90.000 cm3", "correct": false },
+        { "text": "9 cm3", "correct": false },
+        { "text": "9000 cm3", "correct": true }
+      ]
+    },
+    {
+      "question": "¿Cuál es el fabricante del motor?",
+      "options": [
+        { "text": "SCANIA", "correct": true },
+        { "text": "MAN", "correct": false },
+        { "text": "PEGASO", "correct": false },
+        { "text": "IVECO", "correct": false }
+      ]
+    },
+    {
       "question": "¿Cuántos cilindros tiene el motor del vehículo?",
       "options": [
         { "text": "6 en línea.", "correct": true },
@@ -1017,116 +1125,6 @@ export const quizCategories = {
       { text: "Luces de cruce, carretera y destellos.", correct: true }
     ],
   },
-  {
-    "question": "Del sistema contraincendios, decir la correcta:",
-    "options": [
-      { "text": "El cable de detección continua, en caso de rotura, el sistema sigue funcionando.", "correct": true },
-      { "text": "La activación de los extintores se efectúa solamente cuando el conductor presiona el botón de activación.", "correct": false },
-      { "text": "El proceso de descarga dura 3 segundos.", "correct": false },
-      { "text": "En caso de inoperatividad en el sistema, podemos hacer uso del vehículo.", "correct": false }
-    ]
-  },
-  {
-    "question": "Del sistema antiexplosiones, decir la correcta:",
-    "options": [
-      { "text": "Consta de 4 detectores ópticos.", "correct": false },
-      { "text": "Consta de 4 cilindros extintores, 1 por cada detector.", "correct": false },
-      { "text": "2 interruptores de emergencia, 1 para el conductor y otro para el jefe de vehículo.", "correct": false },
-      { "text": "Consta de 2 cilindros extintores.", "correct": true }
-    ]
-  },
-  {
-    "question": "En el selector de funcionamiento de la caja de control, ¿qué funciones nos encontramos?",
-    "options": [
-      { "text": "Inoperativo-operativo.", "correct": false },
-      { "text": "Apagado-encendido.", "correct": false },
-      { "text": "Normal-combate.", "correct": true },
-      { "text": "Ninguno de los anteriores.", "correct": false }
-    ]
-  },
-  {
-    "question": "Después del activado del sistema, ¿Qué normas deberemos seguir?",
-    "options": [
-      { "text": "El agente extintor es tóxico, y deberemos abandonar el vehículo inmediatamente.", "correct": false },
-      { "text": "El agente extintor no es tóxico, y no es necesario abandonar el vehículo.", "correct": true },
-      { "text": "El agente extintor no es tóxico, pero es obligatorio abandonar el vehículo.", "correct": false },
-      { "text": "Ninguna de las anteriores.", "correct": false }
-    ]
-  },
-  {
-    "question": "Del selector de velocidades, decir la correcta:",
-    "options": [
-      { "text": "1ª gama: 1ª y 2ª velocidad seleccionada.", "correct": false },
-      { "text": "2ª gama: 1ª a 4ª velocidad y viceversa.", "correct": true },
-      { "text": "D: 1ª a 6ª velocidad y viceversa.", "correct": false },
-      { "text": "Ninguna de las anteriores.", "correct": false }
-    ]
-  },
-  {
-    "question": "Al ser remolcado, hay que tener en cuenta una de las siguientes normas:",
-    "options": [
-      { "text": "Asegurarse de que al cambio de velocidades le llega corriente.", "correct": false },
-      { "text": "Situar la palanca de sentido de marcha en ECO.", "correct": false },
-      { "text": "No sobrepasar los 40 km/h.", "correct": true },
-      { "text": "Hacerlo con la barra de remolque.", "correct": false }
-    ]
-  },
-  {
-    "question": "¿Cuál es la pendiente máxima que puede subir el vehículo?",
-    "options": [
-      { "text": "60%", "correct": true },
-      { "text": "70%", "correct": false },
-      { "text": "30%", "correct": false },
-      { "text": "45%", "correct": false }
-    ]
-  },
-  {
-    "question": "¿Cuántos cilindros tiene el motor del vehículo?",
-    "options": [
-      { "text": "6 en línea.", "correct": true },
-      { "text": "6 en V.", "correct": false },
-      { "text": "8 en V.", "correct": false },
-      { "text": "8 en línea.", "correct": false }
-    ]
-  },
-  {
-    "question": "¿Capacidad del depósito auxiliar y principal?",
-    "options": [
-      { "text": "123 y 234.", "correct": false },
-      { "text": "147 y 191.", "correct": false },
-      { "text": "275 y 110.", "correct": true },
-      { "text": "234 y 123.", "correct": false }
-    ]
-  },
-  {
-    "question": "¿Potencia del motor del vehículo?",
-    "options": [
-      { "text": "310 CV.", "correct": true },
-      { "text": "124 CV.", "correct": false },
-      { "text": "380 CV.", "correct": false },
-      { "text": "(Opción faltante)", "correct": false }
-    ]
-  },
-  {
-    "question": "¿Cuál es la cilindrada del motor?",
-    "options": [
-      { "text": "9000 m3", "correct": false },
-      { "text": "90.000 cm3", "correct": false },
-      { "text": "9 cm3", "correct": false },
-      { "text": "9000 cm3", "correct": true }
-    ]
-  },
-  {
-    "question": "¿Cuál es el fabricante del motor?",
-    "options": [
-      { "text": "SCANIA", "correct": true },
-      { "text": "MAN", "correct": false },
-      { "text": "PEGASO", "correct": false },
-      { "text": "IVECO", "correct": false }
-    ]
-  },
-
-
 ],
 ]
 }
