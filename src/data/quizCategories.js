@@ -813,7 +813,159 @@ export const quizCategories = {
         { text: "Filtro rotativo.", correct: false },
       ],
     },
-
+    {
+      question: "¿Cuál es la misión de la válvula de rebose?",
+      options: [
+        { text: "Limitar la presión del sistema de aire acondicionado.", correct: false },
+        { text: "Limitar la presión del sistema de combustible.", correct: false },
+        { text: "Limitar la presión del sistema de combustible y purgar continuamente el mismo.", correct: true },
+        { text: "Limitar la cantidad de combustible que entra en los depósitos.", correct: false },
+      ],
+    },
+    {
+      question: "¿Cuál es la función del turbocompresor?",
+      options: [
+        { text: "Aumentar la cantidad de aire que entra en los cilindros.", correct: true },
+        { text: "Aumentar la cantidad de combustible que entra en los cilindros.", correct: false },
+        { text: "Aumentar la cantidad de aceite que entra en el motor.", correct: false },
+        { text: "Aumentar la cantidad de aire que entra en los filtros.", correct: false },
+      ],
+    },
+    {
+      question: "¿Para qué sirve el sistema hidrostático de ventiladores?",
+      options: [
+        { text: "Es para enfriar la cámara de combate.", correct: false },
+        { text: "Es para hacer funcionar los ventiladores que enfrían el radiador.", correct: true },
+        { text: "Es para hacer funcionar el ventilador del aire acondicionado.", correct: false },
+        { text: "Ninguna de las anteriores.", correct: false },
+      ],
+    },
+    {
+      question: "¿Qué elementos del sistema eléctrico no encontramos en el motor?",
+      options: [
+        { text: "Motor de arranque.", correct: false },
+        { text: "Alternador.", correct: false },
+        { text: "Imán de parada.", correct: false },
+        { text: "Todos los anteriores.", correct: true },
+      ],
+    },
+    {
+      question: "¿Qué elementos eléctricos no encontramos sobre el vehículo?",
+      options: [
+        { text: "Alternador.", correct: true },
+        { text: "Cerebro electrónico.", correct: false },
+        { text: "Baterías.", correct: false },
+        { text: "Todos los anteriores.", correct: false },
+      ],
+    },
+    {
+      question: "¿Qué puente es el que recibe el movimiento del motor para transmitirlo a los otros?",
+      options: [
+        { text: "El central.", correct: false },
+        { text: "El anterior.", correct: true },
+        { text: "El posterior.", correct: false },
+        { text: "Todos a la vez.", correct: false },
+      ],
+    },
+    {
+      question: "¿Cuál es la misión del secador de aire? Dígame la más correcta:",
+      options: [
+        { text: "Retener por decantación el agua producida en la compresión del aire y sus impurezas.", correct: true },
+        { text: "Absorber por medio del granulado el agua comprimida en la decantación.", correct: false },
+        { text: "Filtrar el aire a través de un filtro grueso.", correct: false },
+        { text: "Ninguna de las anteriores.", correct: false },
+      ],
+    },
+    {
+      question: "¿Quién envía el aire a los depósitos de aire comprimido?",
+      options: [
+        { text: "El compresor.", correct: false },
+        { text: "El secador de aire con regulador de presión.", correct: true },
+        { text: "El cilindro neumático.", correct: false },
+        { text: "El turbocompresor.", correct: false },
+      ],
+    },
+    {
+      question: "¿Cuántas pinzas de frenos tiene el vehículo en cada rueda?",
+      options: [
+        { text: "1 en cada rueda.", correct: false },
+        { text: "2 en cada rueda.", correct: false },
+        { text: "2 en cada rueda anterior y 1 en las demás.", correct: true },
+        { text: "Las mismas en todas las ruedas.", correct: false },
+      ],
+    },
+    {
+      question: "¿De qué tipo es la suspensión del vehículo?",
+      options: [
+        { text: "Oleoneumática.", correct: true },
+        { text: "Hidroneumática.", correct: false },
+        { text: "Nitroneumática.", correct: false },
+        { text: "Todas son falsas.", correct: false },
+      ],
+    },
+    {
+      question: "El conjunto del mando de luces no consta de:",
+      options: [
+        { text: "Palanca para indicadores de giro y ráfagas.", correct: false },
+        { text: "Palanca de mando de luces (cruce y carretera).", correct: false },
+        { text: "Luces de intermitencia de emergencia.", correct: true },
+        { text: "Ninguno de los anteriores.", correct: false },
+      ],
+    },
+    {
+      question: "¿Dónde está situado el mecanismo antigás?",
+      options: [
+        { text: "En la palanca del freno de emergencia.", correct: false },
+        { text: "En las ruedas delanteras, que es donde necesita más presión.", correct: false },
+        { text: "Debajo del pedal del acelerador.", correct: false },
+        { text: "A la salida del motor.", correct: true },
+      ],
+    },
+    {
+      question: "¿Cuándo entra en funcionamiento el mecanismo antigás?",
+      options: [
+        { text: "Cuando la temperatura del agua del motor sobrepasa los 109 grados C.", correct: false },
+        { text: "Cuando la presión de aceite baja de los 7 bares.", correct: false },
+        { text: "Cuando intentamos meter la marcha atrás y estamos en marcha.", correct: true },
+        { text: "Ninguna de las anteriores.", correct: false },
+      ],
+    },
+    {
+      question: "Los diferenciales son...",
+      options: [
+        { text: "Autoblocantes.", correct: true },
+        { text: "Semiblocantes.", correct: false },
+        { text: "Blocantes.", correct: false },
+        { text: "Ninguna de las anteriores.", correct: false },
+      ],
+    },
+    {
+      question: "En elementos de mando y control, no encontramos:",
+      options: [
+        { text: "Selector de gamas de marchas.", correct: false },
+        { text: "Cerebro electrónico.", correct: false },
+        { text: "Sistema contraincendios.", correct: true },
+        { text: "Todas las anteriores.", correct: false },
+      ],
+    },
+    {
+      question: "¿De dónde no recibe impulsos el cerebro electrónico?",
+      options: [
+        { text: "La velocidad del vehículo.", correct: false },
+        { text: "Del número de revoluciones del motor.", correct: false },
+        { text: "Del mecanismo antigás.", correct: true },
+        { text: "De la posición de la palanca de mando de la bomba de inyección.", correct: false },
+      ],
+    },
+    {
+      question: "Con el conmutador general de luces en la posición más a la derecha, ¿qué se encenderá?",
+      options: [
+        { text: "Luces de posición reducidas.", correct: false },
+        { text: "Luces de cruce y carretera.", correct: false },
+        { text: "Cambios de dirección (intermitencias).", correct: false },
+        { text: "Luces de cruce, carretera y destellos.", correct: true },
+      ],
+    },
   ],
   ]
 }
