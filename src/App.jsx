@@ -3,7 +3,6 @@ import { quizCategories } from "./data/quizCategories";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 
-// Función para barajar los elementos de un array
 const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
 
 const Quiz = () => {
@@ -18,7 +17,6 @@ const Quiz = () => {
   const [nota, setNota] = useState(0);
   const [answered, setAnswered] = useState(false);
   const [feedback, setFeedback] = useState(null);
-  const [totalQuestionsCount, setTotalQuestionsCount] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
 
   useEffect(() => {
@@ -31,14 +29,11 @@ const Quiz = () => {
 
   const startQuiz = (selectedCategory, customQuestions = null) => {
     const allQuestions = customQuestions || quizCategories[selectedCategory] || [];
-
-    console.log("Total de preguntas disponibles:", allQuestions.length); // Verificar en consola
-
-    const shuffledAll = shuffleArray(allQuestions);
+    console.log("Preguntas cargadas:", allQuestions.length);
     
+    const shuffledAll = shuffleArray(allQuestions);
     setCategory(selectedCategory);
     setQuestions(shuffledAll);
-    setTotalQuestionsCount(allQuestions.length); // Asegurar que este sea el número correcto
     setFailedQuestions([]);
     setCurrentQuestion(0);
     setScore(0);
@@ -84,6 +79,8 @@ const Quiz = () => {
     }
   };
 
+  const totalDisplay = questions.length;
+
   return (
     <div className="p-6 xl:max-w-[80%] max-w-[95%] mx-auto bg-white rounded-xl shadow-md space-y-4 text-center">
       <Analytics />
@@ -101,7 +98,7 @@ const Quiz = () => {
         </div>
       ) : showScore ? (
         <div>
-          <h2 className="text-xl font-bold text-green-600">Tu puntuación: {score} / {totalQuestionsCount}</h2>
+          <h2 className="text-xl font-bold text-green-600">Tu puntuación: {score} / {totalDisplay}</h2>
           <h2 className="text-xl font-bold text-green-600">Tu nota: {nota.toFixed(2)}</h2>
           <button
             onClick={() => setCategory(null)}
@@ -122,8 +119,8 @@ const Quiz = () => {
         <div>
           <div className="mb-5 text-xs w-full text-left flex flex-col xl:pt-9">
             <span className="text-gray-400 text-[70%]">{category}</span>
-            <div>Pregunta nº: {currentQuestion + 1} / {totalQuestionsCount}</div>
-            <div className="font-semibold">Correctas: {score} / {totalQuestionsCount}</div>
+            <div>Pregunta nº: {currentQuestion + 1} / {totalDisplay}</div>
+            <div className="font-semibold">Correctas: {score} / {totalDisplay}</div>
           </div>
           <h2 className="md:text-lg text-md font-semibold text-gray-700">{questions[currentQuestion]?.question}</h2>
           <div className="mt-4 space-y-4">
