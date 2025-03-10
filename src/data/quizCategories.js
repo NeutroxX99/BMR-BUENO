@@ -1143,8 +1143,8 @@ export const quizCategories = {
       { text: "Luces de cruce, carretera y destellos.", correct: true }
     ],
   },
-],
 ]
-};
+]
+}
 
 console.log("Cargando categorías...", quizCategories);
