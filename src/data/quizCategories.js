@@ -1134,6 +1134,15 @@ export const quizCategories = {
       { text: "Luces de cruce, carretera y destellos.", correct: true }
     ],
   },
+  {
+    question: "Con el conmutador general de luces en la posición más a la derecha, ¿qué se encenderá?",
+    options: [
+      { text: "Luces de posición reducidas.", correct: false },
+      { text: "Luces de cruce y carretera.", correct: false },
+      { text: "Cambios de dirección (intermitencias).", correct: false },
+      { text: "Luces de cruce, carretera y destellos.", correct: true }
+    ],
+  },
 ],
 ]
 };
