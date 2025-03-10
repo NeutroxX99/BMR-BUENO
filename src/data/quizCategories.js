@@ -1143,6 +1143,15 @@ export const quizCategories = {
       { text: "Luces de cruce, carretera y destellos.", correct: true }
     ],
   },
+  {
+    question: "¿Qué clase de aceite lleva la CV y la Transfer?",
+    options: [
+      { text: "SAE 10 y 15/40.", correct: false },
+      { text: "SAE 10 los dos.", correct: true },
+      { text: "SAE 90 y SAE 30.", correct: false },
+      { text: "ninguna de las anteriores.", correct: false }
+    ],
+  }
 ]
 ]
 }
