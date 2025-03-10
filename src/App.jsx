@@ -3,6 +3,7 @@ import { quizCategories } from "./data/quizCategories";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
+// Función para mezclar un array
 const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
 
 const QuizApp = () => {
@@ -21,6 +22,7 @@ const QuizApp = () => {
   const [isSimulacro, setIsSimulacro] = useState(false);
   const [suspendido, setSuspendido] = useState(false);
 
+  // Calcular la nota después de cada cambio en el puntaje o las preguntas
   useEffect(() => {
     if (questions.length > 0) {
       setNota((score / questions.length) * 10);
@@ -29,6 +31,7 @@ const QuizApp = () => {
     }
   }, [score, questions]);
 
+  // Comprobar si el simulacro ha sido suspendido
   useEffect(() => {
     if (isSimulacro && questions.length > 0 && showScore) {
       const fallos = questions.length - score;
@@ -36,6 +39,7 @@ const QuizApp = () => {
     }
   }, [showScore, isSimulacro, questions, score]);
 
+  // Iniciar el cuestionario con la categoría seleccionada
   const startQuiz = (selectedCategory, customQuestions = null, simulacro = false) => {
     const allQuestions = customQuestions || quizCategories[selectedCategory];
     const shuffledAll = shuffleArray(allQuestions);
@@ -55,10 +59,12 @@ const QuizApp = () => {
     setSuspendido(false);
   };
 
+  // Log de las preguntas cargadas
   useEffect(() => {
     console.log("Preguntas cargadas en el estado:", questions.length);
   }, [questions]);
 
+  // Manejar la respuesta seleccionada por el usuario
   const handleAnswer = (option) => {
     if (!answered) {
       setSelectedOption(option);
@@ -77,6 +83,7 @@ const QuizApp = () => {
     }
   };
 
+  // Avanzar a la siguiente pregunta
   const nextQuestion = () => {
     const nextIndex = currentQuestion + 1;
     if (nextIndex < questions.length) {
@@ -90,12 +97,14 @@ const QuizApp = () => {
     }
   };
 
+  // Reintentar preguntas falladas
   const retryFailedQuestions = () => {
     if (failedQuestions.length > 0) {
       startQuiz(category, failedQuestions);
     }
   };
 
+  // Mostrar el total de preguntas
   const totalDisplay = questions.length;
 
   return (
