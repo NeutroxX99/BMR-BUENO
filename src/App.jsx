@@ -3,24 +3,24 @@ import { quizCategories } from "./data/quizCategories";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
-// Función para barajar los elementos de un array
 const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
 
-const Quiz = () => {
-  const [failedQuestions, setFailedQuestions] = useState([]); // Preguntas falladas
-  const [category, setCategory] = useState(null); // Categoría seleccionada
-  const [questions, setQuestions] = useState([]); // Lista de preguntas
-  const [currentQuestion, setCurrentQuestion] = useState(0); // Pregunta actual
-  const [score, setScore] = useState(0); // Puntuación
-  const [showScore, setShowScore] = useState(false); // Mostrar puntaje
-  const [shuffledOptions, setShuffledOptions] = useState([]); // Opciones desordenadas
-  const [showNext, setShowNext] = useState(false); // Mostrar botón siguiente
-  const [nota, setNota] = useState(0); // Nota final
-  const [answered, setAnswered] = useState(false); // Si se respondió
-  const [feedback, setFeedback] = useState(null); // Mensaje de feedback
-  const [selectedOption, setSelectedOption] = useState(null); // Opción seleccionada
+const QuizApp = () => {
+  const [failedQuestions, setFailedQuestions] = useState([]);
+  const [category, setCategory] = useState(null);
+  const [questions, setQuestions] = useState([]);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [score, setScore] = useState(0);
+  const [showScore, setShowScore] = useState(false);
+  const [shuffledOptions, setShuffledOptions] = useState([]);
+  const [showNext, setShowNext] = useState(false);
+  const [nota, setNota] = useState(0);
+  const [answered, setAnswered] = useState(false);
+  const [feedback, setFeedback] = useState(null);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [isSimulacro, setIsSimulacro] = useState(false);
+  const [suspendido, setSuspendido] = useState(false);
 
-  // Efecto para actualizar la nota cuando cambia la puntuación
   useEffect(() => {
     if (questions.length > 0) {
       setNota((score / questions.length) * 10);
@@ -29,35 +29,36 @@ const Quiz = () => {
     }
   }, [score, questions]);
 
-  // Función para iniciar el quiz
-  const startQuiz = (selectedCategory, customQuestions = null) => {
+  useEffect(() => {
+    if (isSimulacro && questions.length > 0 && showScore) {
+      const fallos = questions.length - score;
+      setSuspendido(fallos > 2);
+    }
+  }, [showScore, isSimulacro, questions, score]);
+
+  const startQuiz = (selectedCategory, customQuestions = null, simulacro = false) => {
     const allQuestions = customQuestions || quizCategories[selectedCategory];
-
-    console.log("Categoría seleccionada:", selectedCategory);
-    console.log("Preguntas en la categoría:", allQuestions.length);
-
     const shuffledAll = shuffleArray(allQuestions);
+    const selectedQuestions = simulacro ? shuffledAll.slice(0, 20) : shuffledAll;
 
     setCategory(selectedCategory);
-    setQuestions(shuffledAll);
-    setFailedQuestions([]); // Resetear preguntas falladas
+    setQuestions(selectedQuestions);
+    setFailedQuestions([]);
     setCurrentQuestion(0);
     setScore(0);
     setShowScore(false);
     setFeedback(null);
     setShowNext(false);
-    setShuffledOptions(shuffleArray(shuffledAll[0].options)); // Barajar opciones
+    setShuffledOptions(shuffleArray(selectedQuestions[0].options));
     setAnswered(false);
-
-    console.log("Preguntas seleccionadas para el quiz:", shuffledAll.length);
+    setIsSimulacro(simulacro);
+    setSuspendido(false);
   };
 
-  // Mostrar cuántas preguntas se cargaron realmente en el estado
   useEffect(() => {
     console.log("Preguntas cargadas en el estado:", questions.length);
   }, [questions]);
 
-  // Función para manejar la respuesta seleccionada
   const handleAnswer = (option) => {
     if (!answered) {
       setSelectedOption(option);
@@ -76,7 +77,6 @@ const Quiz = () => {
     }
   };
 
-  // Función para ir a la siguiente pregunta
   const nextQuestion = () => {
     const nextIndex = currentQuestion + 1;
     if (nextIndex < questions.length) {
@@ -90,14 +90,12 @@ const Quiz = () => {
     }
   };
 
-  // Función para reintentar las preguntas falladas
   const retryFailedQuestions = () => {
     if (failedQuestions.length > 0) {
       startQuiz(category, failedQuestions);
     }
   };
 
-  // Siempre mostrar el total real de preguntas
   const totalDisplay = questions.length;
 
   return (
@@ -117,7 +115,13 @@ const Quiz = () => {
             className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
             onClick={() => startQuiz("cuestionarios")}
           >
-            cuestionarios
+            Cuestionarios generales
+          </button>
+          <button
+            className="mt-4 ml-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700"
+            onClick={() => startQuiz("cuestionarios", null, true)}
+          >
+            Simulacro de examen (20 preguntas)
           </button>
         </div>
       ) : showScore ? (
@@ -126,6 +130,11 @@ const Quiz = () => {
             Tu puntuación: {score} / {totalDisplay}
           </h2>
           <h2 className="text-xl font-bold text-green-600">Tu nota: {nota.toFixed(2)}</h2>
+          {isSimulacro && (
+            <h2 className={`text-xl font-bold ${suspendido ? "text-red-600" : "text-green-600"}`}>
+              {suspendido ? "Has suspendido el simulacro (más de 2 errores)" : "Has aprobado el simulacro"}
+            </h2>
+          )}
           <button
             onClick={() => setCategory(null)}
             className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
@@ -190,4 +199,4 @@ const Quiz = () => {
   );
 };
 
-export default Quiz;
+export default QuizApp;
