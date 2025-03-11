@@ -290,9 +290,9 @@ export const quizCategories = {
     {
       question: 'El indicador control de emergencia se enciende:',
       options: [
-        { text: "Alta temperatura refrigerante motor, más de 103º", correct: false },
+        { text: "Alta temperatura refrigerante motor, más de 103º", correct: true },
         { text: "Alta temperatura CV, inferior a 145º", correct: false },
-        { text: "Baja presión aceite motor, inferior a 0'9 bar", correct: true },
+        { text: "Baja presión aceite motor, inferior a 0'9 bar", correct: false},
         { text: "Alta presión del circuito de frenos, superior a 5 bar", correct: false }
       ],
     },
@@ -364,8 +364,8 @@ export const quizCategories = {
     {
       question: 'El arranque del vehículo en condiciones normales, ¿durante cuánto tiempo hay que tenerlo a régimen de ralentí para que el aceite llegue al turbocompresor?',
       options: [
-        { text: "20 sg", correct: false },
-        { text: "17 sg", correct: true },
+        { text: "20 sg", correct: true },
+        { text: "17 sg", correct: false },
         { text: "30 sg", correct: false }
       ],
     },
@@ -683,7 +683,7 @@ export const quizCategories = {
           question: '¿Cuántos ejes tiene el vehículo?',
           options: [
             { text: "2 ejes", correct: false },
-            { text: "4 ejes", correct: true },
+            { text: "3 ejes", correct: true },
             { text: "6 ejes", correct: false }
           ],
         },
@@ -773,14 +773,6 @@ export const quizCategories = {
             { text: "Manual", correct: false },
             { text: "Automática", correct: true },
             { text: "Semiautomática", correct: false }
-          ],
-        },
-        {
-          question: '¿Cuál es la capacidad del tanque de aceite?',
-          options: [
-            { text: "5L", correct: true },
-            { text: "3L", correct: false },
-            { text: "8L", correct: false }
           ],
         },
         {
